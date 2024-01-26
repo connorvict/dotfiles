@@ -1,5 +1,4 @@
 # ZSH
-./dot_config/zsh/dot_zcompdump
-./dot_config/zsh/dot_zsh_plugins.zsh
-./dot_config/zsh/private_empty_dot_zsh_history
+# Add dot_zcompdump
+* zsh/zcompdump
 
