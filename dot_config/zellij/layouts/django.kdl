@@ -1,0 +1,13 @@
+layout {
+    pane command="nvim" focus=true
+    floating_panes {
+        pane command="make" {
+            args "dev"
+            start_suspended true
+        }
+        pane command="make" {
+            args "test"
+            start_suspended true
+        }
+    }
+}
