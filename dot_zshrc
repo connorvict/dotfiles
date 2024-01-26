@@ -86,8 +86,6 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 
 ### START-Keychain ### 
 ## Let  re-use ssh-agent and/or gpg-agent between logins 
-/usr/bin/keychain $HOME/.ssh/personalgit 
-/usr/bin/keychain $HOME/.ssh/workgit
-source $HOME/.keychain/$HOST-sh 
+eval `keychain --eval --agents ssh personalgit workgit`
 #### End-Keychain ###
 
