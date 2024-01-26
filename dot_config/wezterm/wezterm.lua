@@ -12,6 +12,6 @@ return {
 	font_size = 14.0,
 	scrollback_lines = 5000,
 	hide_tab_bar_if_only_one_tab = true,
-	default_domain = "WSL:Arch",
+	--default_domain = "WSL:Arch",
 	max_fps = 165,
 }
