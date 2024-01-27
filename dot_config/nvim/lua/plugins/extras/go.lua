@@ -13,8 +13,6 @@ return {
       servers = {
         templ = {},
         tailwindcss = {
-          -- exclude a filetype from the default_config
-          filetypes_exclude = { "markdown" },
           -- add additional filetypes to the default_config
           filetypes_include = { "templ" },
           -- to fully override the default_config, change the below
@@ -22,10 +20,9 @@ return {
           init_options = { userLanguages = { templ = "html" } },
         },
         htmx = {
-          filetypes= { "html", "templ" },
+          filetypes = { "html", "templ" },
         },
       },
     },
   },
 }
-

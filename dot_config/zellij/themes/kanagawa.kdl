@@ -1,0 +1,15 @@
+themes {
+    kanagawa {
+        fg 220 215 186
+        bg 31 31 40
+        black 30 31 40
+        red 255 93 98
+        green 152 187 108
+        yellow 230 195 132
+        blue 127 180 202
+        magenta 149 127 184
+        cyan 122 168 159
+        white 255 160 102
+        orange 208 135 112
+    }
+}
