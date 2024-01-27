@@ -9,7 +9,12 @@ return {
     },
   },
   { "rebelot/kanagawa.nvim" },
-  { "sainnhe/everforest" },
+  {
+    "neanias/everforest-nvim",
+    config = function()
+      background = "soft"
+    end,
+  },
   -- Configure LazyVim to load catppuccin
   {
     "LazyVim/LazyVim",
