@@ -12,13 +12,6 @@ return {
     opts = {
       servers = {
         templ = {},
-        tailwindcss = {
-          -- add additional filetypes to the default_config
-          filetypes_include = { "templ" },
-          -- to fully override the default_config, change the below
-          -- filetypes = {}
-          init_options = { userLanguages = { templ = "html" } },
-        },
         htmx = {
           filetypes = { "html", "templ" },
         },

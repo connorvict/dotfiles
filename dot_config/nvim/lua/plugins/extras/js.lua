@@ -12,10 +12,6 @@ return {
     opts = {
       servers = {
         astro = {},
-        tailwindcss = {
-          filetypes_include = { "astro", "markdown" },
-          init_options = { userLanguages = { astro = "html" } },
-        },
       },
     },
   },
