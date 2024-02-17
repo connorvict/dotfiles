@@ -1,0 +1,15 @@
+[sso-session connorvict]
+sso_start_url = https://fc9403.awsapps.com/start
+sso_region = us-east-1
+
+[profile connorvict-dev]
+sso_session = connorvict
+sso_account_id = 654654262741
+sso_role_name = AdministratorAccess
+region = us-east-1
+
+[profile connorvict-production]
+sso_session = connorvict
+sso_account_id = 533267435196
+sso_role_name = AdministratorAccess
+region = us-east-1
