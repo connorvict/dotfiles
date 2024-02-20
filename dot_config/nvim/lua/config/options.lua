@@ -43,5 +43,3 @@ vim.filetype.add({
     templ = "templ",
   },
 })
-
-vim.api.nvim_set_hl(0, "LineNr", { fg = "#FFFFFF", bold = true })
