@@ -10,6 +10,7 @@ return {
       "shfmt",
       "djlint",
       "prettierd",
+      "rustywind",
     },
     ui = {
       border = "rounded",
