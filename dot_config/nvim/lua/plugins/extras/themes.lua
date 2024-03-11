@@ -1,5 +1,4 @@
 return {
-  -- add catppuccin
   { "projekt0n/github-nvim-theme" },
   {
     "navarasu/onedark.nvim",
@@ -13,5 +12,14 @@ return {
     config = function()
       background = "soft"
     end,
+  },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    opts = {
+      styles = {
+        transparency = true,
+      },
+    },
   },
 }

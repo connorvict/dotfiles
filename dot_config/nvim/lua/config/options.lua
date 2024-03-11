@@ -1,7 +1,6 @@
 vim.opt.cursorline = false
 vim.opt.nu = true
 vim.opt.relativenumber = true
-
 vim.opt.expandtab = true
 vim.opt.smartindent = true
 vim.opt.wrap = false
@@ -41,5 +40,8 @@ vim.filetype.add({
   extension = {
     astro = "astro",
     templ = "templ",
+    svelte = "svelte",
   },
 })
+
+vim.api.nvim_set_hl(0, "LineNr", { fg = "#FFFFFF", bold = true })

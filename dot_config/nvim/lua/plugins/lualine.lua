@@ -4,11 +4,11 @@ return {
     local icons = require("lazyvim.config").icons
     local Util = require("lazyvim.util")
 
-    local C = require("catppuccin.palettes").get_palette("mocha")
+    -- local C = require("catppuccin.palettes").get_palette("mocha")
     return {
       options = {
         icons_enabled = true,
-        theme = "onedark",
+        -- theme = "onedark",
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
         disabled_filetypes = {
@@ -29,10 +29,10 @@ return {
             "mode",
             icon = "",
             separator = { left = "", right = "" },
-            color = {
-              fg = C.mantle,
-              bg = C.lavender,
-            },
+            -- color = {
+            --   fg = C.mantle,
+            --   bg = C.lavender,
+            -- },
           },
         },
         lualine_b = {
@@ -40,27 +40,27 @@ return {
             "branch",
             icon = "",
             separator = { left = "", right = "" },
-            color = {
-              fg = C.sapphire,
-              bg = C.surface2,
-            },
+            -- color = {
+            --   fg = C.sapphire,
+            --   bg = C.surface2,
+            -- },
           },
           {
             "diff",
             separator = { left = "", right = "" },
-            color = {
-              fg = C.mantle,
-              bg = C.surface2,
-            },
+            -- color = {
+            --   fg = C.mantle,
+            --   bg = C.surface2,
+            -- },
           },
         },
         lualine_c = {
           {
             "diagnostics",
             separator = { left = "", right = "" },
-            color = {
-              bg = C.surface1,
-            },
+            -- color = {
+            --   bg = C.surface1,
+            -- },
           },
           {
             "filename",
@@ -71,20 +71,20 @@ return {
           {
             "filetype",
             icons_enabled = false,
-            color = {
-              fg = C.mantle,
-              bg = C.maroon,
-            },
+            -- color = {
+            --   fg = C.mantle,
+            --   bg = C.maroon,
+            -- },
           },
         },
         lualine_z = {
           {
             "location",
             icon = "",
-            color = {
-              fg = C.mantle,
-              bg = C.flamingo,
-            },
+            -- color = {
+            --   fg = C.mantle,
+            --   bg = C.flamingo,
+            -- },
           },
         },
       },
