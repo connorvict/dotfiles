@@ -1,0 +1,8 @@
+alias ls='eza -G'
+alias ll='eza -alh'
+alias tree='eza --tree --ignore-glob ".git|node_modules"'
+alias wd='yazi'
+alias cat='bat'
+alias find='fd'
+alias ps='procs'
+alias grep='rg'
