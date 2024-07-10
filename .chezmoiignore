@@ -2,3 +2,5 @@ key.txt.age
 .ssh/known_hosts
 .ssh/known_hosts.old
 .config/chezmoi/**
+.config/tmux/plugins/
+.config/tmux/plugins/**
