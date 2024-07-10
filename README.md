@@ -1,3 +1,4 @@
+````markdown
 # My Chezmoi Dotfiles
 
 Welcome to my personal dotfiles managed by [chezmoi](https://www.chezmoi.io/). This repository contains my configurations for various tools and applications that I use on a daily basis. These configurations are tailored to my personal preferences and workflow, but feel free to use them as a starting point for your own setup.
@@ -17,6 +18,7 @@ This setup uses a variety of packages to enhance productivity and user experienc
 - **bat**: A cat clone with syntax highlighting and Git integration.
 - **eza**: A simple, fast and user-friendly alternative to 'ls'.
 - **procs**: A modern replacement for 'ps' written in Rust.
+- **tmux**: A terminal multiplexer, letting you switch easily between several programs in one terminal.
 
 ## Languages
 
@@ -33,6 +35,7 @@ To install these dotfiles on a new machine, you can use the following command:
 ```bash
 chezmoi init https://github.com/connorvict/dotfiles.git
 ```
+````
 
 ## Contributing
 
@@ -40,4 +43,4 @@ Feel free to fork this repository and customize it to your liking. If you have a
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. under the MIT License - see the [LICENSE](LICENSE) file for details.
