@@ -3,8 +3,8 @@ return {
   opts = {
     skip_confirm_for_simple_edits = true,
     float = {
-      max_width = 60,
-      max_height = 24,
+      max_width = 80,
+      max_height = 32,
     },
     keymaps = {
       ["g?"] = "actions.show_help",
