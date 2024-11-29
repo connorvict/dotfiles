@@ -1,0 +1,9 @@
+Host github_personal
+   IdentityFile ~/.ssh/github_personal
+   User git
+   HostName github.com
+
+Host personal
+  IdentityFile ~/.ssh/oci_personal
+  User opc
+  HostName 129.213.152.54
