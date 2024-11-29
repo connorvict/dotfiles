@@ -1,7 +1,6 @@
-Host github_personal
+Host github.com
    IdentityFile ~/.ssh/github_personal
    User git
-   HostName github.com
 
 Host personal
   IdentityFile ~/.ssh/oci_personal
