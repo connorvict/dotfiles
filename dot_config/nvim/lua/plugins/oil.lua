@@ -11,7 +11,6 @@ return {
       ["<CR>"] = "actions.select",
       ["<C-p>"] = "actions.preview",
       ["q"] = "actions.close",
-      ["<Esc>"] = "actions.close",
       ["<C-l>"] = "actions.refresh",
       ["-"] = "actions.parent",
       ["_"] = "actions.open_cwd",
