@@ -5,12 +5,12 @@
 # Documentation: https://github.com/romkatv/zsh4humans/blob/v5/README.md.
 
 # ssh agent
-if ! pgrep -u "$USER" ssh-agent > /dev/null; then
-    ssh-agent -t 24h > $XDG_RUNTIME_DIR"ssh-agent.env"
-fi
-if [[ ! -f "$SSH_AUTH_SOCK" ]]; then
-    source $XDG_RUNTIME_DIR"ssh-agent.env" >/dev/null
-fi
+# if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+#     ssh-agent -t 24h > $XDG_RUNTIME_DIR"ssh-agent.env"
+# fi
+# if [[ ! -f "$SSH_AUTH_SOCK" ]]; then
+#     source $XDG_RUNTIME_DIR"ssh-agent.env" >/dev/null
+# fi
 
 # Periodic auto-update on Zsh startup: 'ask' or 'no'.
 # You can manually run `z4h update` to update everything.
@@ -74,6 +74,7 @@ z4h init || return
 export GPG_TTY=$TTY
 export EDITOR=nvim
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export BAT_THEME="kanagawa"
 export _ZO_DATA_DIR=~/.local/share/zo
 export GOPATH=$HOME/.cache/go
 export BITWARDEN_EMAIL="norconvictorica@gmail.com"

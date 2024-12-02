@@ -19,6 +19,7 @@ return {
     "rebelot/kanagawa.nvim",
     config = function()
       require("kanagawa").setup({
+        transparent = true,
         colors = {
           theme = {
             all = {
@@ -52,7 +53,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "rose-pine-moon",
+      colorscheme = "kanagawa-dragon",
     },
   },
 }
