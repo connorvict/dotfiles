@@ -49,7 +49,7 @@ config.command_palette_bg_color = scheme.background
 config.command_palette_fg_color = scheme.foreground
 
 -- WINDOW
-config.enable_tab_bar = false
+config.enable_tab_bar = true
 config.window_padding = G.padding
 config.window_close_confirmation = "NeverPrompt"
 config.macos_window_background_blur = 50

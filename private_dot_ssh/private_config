@@ -1,3 +1,15 @@
+Host prodmgmt
+  IdentityFile ~/.ssh/prodmgmt
+  User cvictorica
+  Hostname prod-tools-iad2-mgmt.epfin.coxautoinc.com
+  LocalForward 8000 127.0.0.1:8000
+
+Host prodclient2
+  IdentityFile ~/.ssh/prodclient
+  User cvictorica
+  Hostname prod-clients-iad1-cvictorica-2.epfin.coxautoinc.com
+  LocalForward 8000 127.0.0.1:8000
+
 Host github.com
    IdentityFile ~/.ssh/github_personal
    User git
