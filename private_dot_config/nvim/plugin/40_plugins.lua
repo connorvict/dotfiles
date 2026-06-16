@@ -24,6 +24,10 @@ now_if_args(function()
 		"svelte",
 		"javascript",
 		"typescript",
+		"go",
+		"templ",
+		"odin",
+		"rust",
 	}
 	local isnt_installed = function(lang)
 		return #vim.api.nvim_get_runtime_file("parser/" .. lang .. ".*", false) == 0
@@ -82,12 +86,56 @@ now(function()
 			"svelte-language-server",
 			-- HTML
 			"html-lsp",
+			-- Golang
+			"gopls",
+			"templ",
+			-- Odin
+			"ols",
+			"codelldb",
+			-- Rust
+			"rust-analyzer",
 		},
 	})
 end)
 
 later(function()
 	add({ "https://github.com/rafamadriz/friendly-snippets" })
+end)
+
+now(function()
+	add({ "https://github.com/mfussenegger/nvim-dap", "https://github.com/igorlfs/nvim-dap-view" })
+	add({
+		"https://github.com/NANDquark/nvim-dap-odin",
+		"https://github.com/leoluz/nvim-dap-go",
+		"https://github.com/julianolf/nvim-dap-lldb",
+	})
+	local dap = require("dap")
+	dap.adapters.codelldb = {
+		type = "executable",
+		command = "codelldb",
+	}
+	require("dap-go").setup()
+	require("dap-view").setup()
+	require("nvim-dap-odin").setup({ notifications = false })
+
+	local set_dap_highlights = function()
+		vim.api.nvim_set_hl(0, "debugPC", { link = "Visual" })
+	end
+	set_dap_highlights()
+	Config.new_autocmd("ColorScheme", nil, set_dap_highlights, "Set DAP highlights")
+
+	vim.api.nvim_create_user_command("DapConditionalBreakpoint", function()
+		require("dap").set_breakpoint(vim.fn.input("Breakpoint condition: "))
+	end, { desc = "Set conditional breakpoint", force = true })
+
+	vim.api.nvim_create_user_command("DapRunLast", function()
+		require("dap").run_last()
+	end, { desc = "Run last debug session", force = true })
+end)
+
+now(function()
+	add({ "https://github.com/stevearc/overseer.nvim" })
+	require("overseer").setup()
 end)
 
 -- Honorable mentions =========================================================
