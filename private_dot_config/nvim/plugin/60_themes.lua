@@ -8,8 +8,12 @@ now(function()
 		"https://github.com/Shatur/neovim-ayu",
 		"https://github.com/ellisonleao/gruvbox.nvim",
 		"https://github.com/vague-theme/vague.nvim",
+		"https://github.com/zenbones-theme/zenbones.nvim",
+		"https://github.com/rktjmp/lush.nvim",
+		"https://github.com/aktersnurra/no-clown-fiesta.nvim",
+		"https://github.com/metalelf0/kintsugi-nvim",
 	})
 
-	-- Enable only one
-	vim.cmd("color vague")
+	-- Enable saved theme
+	require("config.theme").apply()
 end)

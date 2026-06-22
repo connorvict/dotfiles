@@ -84,6 +84,7 @@ now(function()
 			"biome",
 			"tsgo",
 			"svelte-language-server",
+			"deno",
 			-- HTML
 			"html-lsp",
 			-- Golang
