@@ -5,7 +5,7 @@
       "src": "https://github.com/stevearc/conform.nvim"
     },
     "datastar-lsp": {
-      "rev": "3a0d2c730e5fd890ce9948f5065a8fe6f1881cbc",
+      "rev": "b34e9395bc815c6d18c363c6c99b9b191864e7f4",
       "src": "https://github.com/hyperpuncher/datastar-lsp"
     },
     "everforest": {
@@ -41,7 +41,7 @@
       "src": "https://github.com/mason-org/mason.nvim"
     },
     "mini.nvim": {
-      "rev": "1345d191bb3da9c7b0e977f4387c5761f9bff68d",
+      "rev": "c594be5b095204e99473825ec2dee872e7409a4d",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "neoscroll.nvim": {

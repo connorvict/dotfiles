@@ -59,7 +59,31 @@ now(function() require('mini.sessions').setup() end)
 -- See also:
 -- - `:h MiniStarter-example-config` - non-default config examples
 -- - `:h MiniStarter-lifecycle` - how to work with Starter buffer
-now(function() require('mini.starter').setup() end)
+now(function()
+  local starter = require('mini.starter')
+
+  starter.setup({
+    items = {
+      function()
+        if _G.MiniSessions == nil then return {} end
+        return starter.sections.sessions(5, true)()
+      end,
+      starter.sections.recent_files(5, false, false),
+      {
+        { name = 'Update plugins', action = function() vim.pack.update() end, section = 'Builtin actions' },
+        starter.sections.builtin_actions(),
+      },
+    },
+  })
+
+  Config.new_autocmd('User', 'MiniStarterOpened', function()
+    vim.keymap.set('n', 'U', function() vim.pack.update() end, {
+      buffer = vim.api.nvim_get_current_buf(),
+      desc = 'Update plugins',
+      nowait = true,
+    })
+  end, 'Map U to update plugins from starter')
+end)
 
 -- Statusline. Sets `:h 'statusline'` to show more info in a line below window.
 -- Example usage:
